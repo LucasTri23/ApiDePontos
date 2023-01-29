@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "MhJPQa6htNvwrDQKNNiGXGEOgrqrLfGS0KwcNEB0YsM=",
+  "Source": "ApiServicoDePontos",
+  "BasePath": "_content/ApiServicoDePontos",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

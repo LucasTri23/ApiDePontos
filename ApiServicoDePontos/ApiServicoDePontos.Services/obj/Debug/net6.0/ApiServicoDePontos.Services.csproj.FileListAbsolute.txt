@@ -1,0 +1,17 @@
+C:\Projetos\ApiServicoDePontos\ApiServicoDePontos.Services\obj\Debug\net6.0\ApiServicoDePontos.Services.csproj.AssemblyReference.cache
+C:\Projetos\ApiServicoDePontos\ApiServicoDePontos.Services\obj\Debug\net6.0\ApiServicoDePontos.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\ApiServicoDePontos\ApiServicoDePontos.Services\obj\Debug\net6.0\ApiServicoDePontos.Services.AssemblyInfoInputs.cache
+C:\Projetos\ApiServicoDePontos\ApiServicoDePontos.Services\obj\Debug\net6.0\ApiServicoDePontos.Services.AssemblyInfo.cs
+C:\Projetos\ApiServicoDePontos\ApiServicoDePontos.Services\obj\Debug\net6.0\ApiServicoDePontos.Services.csproj.CoreCompileInputs.cache
+C:\Projetos\ApiServicoDePontos\ApiServicoDePontos.Services\bin\Debug\net6.0\ApiServicoDePontos.Services.deps.json
+C:\Projetos\ApiServicoDePontos\ApiServicoDePontos.Services\bin\Debug\net6.0\ApiServicoDePontos.Services.dll
+C:\Projetos\ApiServicoDePontos\ApiServicoDePontos.Services\bin\Debug\net6.0\ApiServicoDePontos.Services.pdb
+C:\Projetos\ApiServicoDePontos\ApiServicoDePontos.Services\bin\Debug\net6.0\ApiServicoDePonto.Repositories.dll
+C:\Projetos\ApiServicoDePontos\ApiServicoDePontos.Services\bin\Debug\net6.0\ApiServicoDePontos.Domain.dll
+C:\Projetos\ApiServicoDePontos\ApiServicoDePontos.Services\bin\Debug\net6.0\ApiServicoDePonto.Repositories.pdb
+C:\Projetos\ApiServicoDePontos\ApiServicoDePontos.Services\bin\Debug\net6.0\ApiServicoDePontos.Domain.pdb
+C:\Projetos\ApiServicoDePontos\ApiServicoDePontos.Services\obj\Debug\net6.0\ApiServicoDePontos.Services.csproj.CopyComplete
+C:\Projetos\ApiServicoDePontos\ApiServicoDePontos.Services\obj\Debug\net6.0\ApiServicoDePontos.Services.dll
+C:\Projetos\ApiServicoDePontos\ApiServicoDePontos.Services\obj\Debug\net6.0\refint\ApiServicoDePontos.Services.dll
+C:\Projetos\ApiServicoDePontos\ApiServicoDePontos.Services\obj\Debug\net6.0\ApiServicoDePontos.Services.pdb
+C:\Projetos\ApiServicoDePontos\ApiServicoDePontos.Services\obj\Debug\net6.0\ref\ApiServicoDePontos.Services.dll

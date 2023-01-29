@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>9dd10e6c-e997-41a4-b8bd-ee5da479458b</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApiServicoDePonto.Repositories\ApiServicoDePonto.Repositories.csproj" />
+    <ProjectReference Include="..\ApiServicoDePontos.Domain\ApiServicoDePontos.Domain.csproj" />
+    <ProjectReference Include="..\ApiServicoDePontos.Services\ApiServicoDePontos.Services.csproj" />
+  </ItemGroup>
+
+</Project>
