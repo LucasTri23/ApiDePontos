@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\ApiServicoDePontos\\ApiServicoDePontos.Domain\\ApiServicoDePontos.Domain.csproj": {}
+    "C:\\APIs\\ApiServicoDePontos\\ApiServicoDePontos.Domain\\ApiServicoDePontos.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\ApiServicoDePontos\\ApiServicoDePontos.Domain\\ApiServicoDePontos.Domain.csproj": {
+    "C:\\APIs\\ApiServicoDePontos\\ApiServicoDePontos.Domain\\ApiServicoDePontos.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\ApiServicoDePontos\\ApiServicoDePontos.Domain\\ApiServicoDePontos.Domain.csproj",
+        "projectUniqueName": "C:\\APIs\\ApiServicoDePontos\\ApiServicoDePontos.Domain\\ApiServicoDePontos.Domain.csproj",
         "projectName": "ApiServicoDePontos.Domain",
-        "projectPath": "C:\\Projetos\\ApiServicoDePontos\\ApiServicoDePontos.Domain\\ApiServicoDePontos.Domain.csproj",
+        "projectPath": "C:\\APIs\\ApiServicoDePontos\\ApiServicoDePontos.Domain\\ApiServicoDePontos.Domain.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\ApiServicoDePontos\\ApiServicoDePontos.Domain\\obj\\",
+        "outputPath": "C:\\APIs\\ApiServicoDePontos\\ApiServicoDePontos.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

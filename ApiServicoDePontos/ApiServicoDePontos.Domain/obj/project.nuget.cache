@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BOPWTCQveYv4x3Um8vya64RoQazkK1BugoxN28v9YyPl62mBaJLKNGcpth5tJ1bvT3drcQ5elNxA9H6E/Y+vSA==",
+  "dgSpecHash": "Hv2+OOamMGZj+WD3WgiV7zB/K7lDC5n/BQl7HIA7I5udVzq48VPTBFvSN++rRs1NOeITvIpenKzGM6fqTSESoQ==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\ApiServicoDePontos\\ApiServicoDePontos.Domain\\ApiServicoDePontos.Domain.csproj",
+  "projectFilePath": "C:\\APIs\\ApiServicoDePontos\\ApiServicoDePontos.Domain\\ApiServicoDePontos.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

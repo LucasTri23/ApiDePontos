@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tijhAcJMb7wzfZY5KQDsnLH0/57cRAt3aheN3oOgwEdA/NqZrx7+WG4uHOO3RERKHPqmgtqbn/h043dnN5PXsw==",
+  "dgSpecHash": "h5VVHHWWz+H0eJVkRXuUb2bEq95DQAMDKGYgksHbBvSkp+iNnW/J+Qa+5D6m4rQMveUP5t3jrRVsY0EXRLCK9w==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\ApiServicoDePontos\\ApiServicoDePonto.Repositories\\ApiServicoDePonto.Repositories.csproj",
+  "projectFilePath": "C:\\APIs\\ApiServicoDePontos\\ApiServicoDePonto.Repositories\\ApiServicoDePonto.Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",

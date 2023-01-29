@@ -20,9 +20,9 @@ namespace ApiServicoDePonto.Repositories.Repositorio
         public void Inserir(Funcionario model)
         {
             string comandoSql = @"INSERT INTO Funcionario 
-                                (CpfFuncionario, NomeFuncionario, NascimentoFuncionario, TelefoneFuncionario, EmailFuncionario, DataAdmissao, CargoId, LiderancaId, FuncionarioEquipeId) 
+                                (CpfFuncionario, NomeFuncionario, NascimentoFuncionario, TelefoneFuncionario, EmailFuncionario, DataAdmissao, CargoId) 
                                     VALUES
-                                (@CpfFuncionario, @NomeFuncionario, @NascimentoFuncionario, @TelefoneFuncionario, @EmailFuncionario, @DataAdmissao, @CargoId, @LiderancaId, @FuncionarioEquipeId);";
+                                (@CpfFuncionario, @NomeFuncionario, @NascimentoFuncionario, @TelefoneFuncionario, @EmailFuncionario, @DataAdmissao, @CargoId);";
 
             using (var cmd = new SqlCommand(comandoSql, _conn))
             {
@@ -33,8 +33,6 @@ namespace ApiServicoDePonto.Repositories.Repositorio
                 cmd.Parameters.AddWithValue("@EmailFuncionario", model.EmailFuncionario);
                 cmd.Parameters.AddWithValue("@DataAdmissao", model.DataAdmissao);
                 cmd.Parameters.AddWithValue("@CargoId", model.Cargo.CargoId);
-                cmd.Parameters.AddWithValue("@LiderancaId", model.Lideranca.LiderancaId);
-                cmd.Parameters.AddWithValue("@FuncionarioEquipeId", model.FuncionarioEquipe.FuncionarioEquipeId);
                 cmd.ExecuteNonQuery();
             }
         }
@@ -69,7 +67,7 @@ namespace ApiServicoDePonto.Repositories.Repositorio
         }
         public bool SeExiste(string cpfFuncionario)
         {
-            string comandoSql = @"SELECT COUNT(CpfFuncionario) as total FROM Cliente WHERE CpfFuncionario = @CpfFuncionario";
+            string comandoSql = @"SELECT COUNT(CpfFuncionario) as total FROM Funcionario WHERE CpfFuncionario = @CpfFuncionario";
 
             using (var cmd = new SqlCommand(comandoSql, _conn))
             {
@@ -79,8 +77,7 @@ namespace ApiServicoDePonto.Repositories.Repositorio
         }
         public Funcionario? ObterPorCPF(string cpfFuncionario)
         {
-            string comandoSql = @"SELECT FuncionarioId, CpfFuncionario, NomeFuncionario, NascimentoFuncionario, TelefoneFuncionario, EmailFuncionario, 
-                DataAdmissao, CargoId, LiderancaId, FuncionarioEquipeId FROM Cliente WHERE CpfCliente = @CpfCliente";
+            string comandoSql = @"SELECT FuncionarioId, CpfFuncionario FROM Funcionario WHERE CpfFuncionario = @CpfFuncionario";
 
             using (var cmd = new SqlCommand(comandoSql, _conn))
             {
@@ -93,14 +90,7 @@ namespace ApiServicoDePonto.Repositories.Repositorio
                         var funcionario = new Funcionario();
                         funcionario.FuncionarioId = Convert.ToInt32(rdr["FuncionarioId"]);
                         funcionario.CpfFuncionario = Convert.ToString(rdr["CpfFuncionario"]);
-                        funcionario.NomeFuncionario = Convert.ToString(rdr["NomeFuncionario"]);
-                        funcionario.NascimentoFuncionario = Convert.ToDateTime(rdr["NascimentoFuncionario"]);
-                        funcionario.TelefoneFuncionario = Convert.ToInt32(rdr["TelefoneFuncionario"]);
-                        funcionario.EmailFuncionario = Convert.ToString(rdr["EmailFuncionario"]);
-                        funcionario.DataAdmissao = Convert.ToDateTime(rdr["DataAdmissao"]);
-                        funcionario.Cargo.CargoId = Convert.ToInt32(rdr["CargoId"]);
-                        funcionario.Lideranca.LiderancaId = Convert.ToInt32(rdr["LiderancaId"]);
-                        funcionario.FuncionarioEquipe.FuncionarioEquipeId = Convert.ToInt32(rdr["FuncionarioEquipeId"]);
+
                         return funcionario;
                     }
                     else
@@ -110,7 +100,7 @@ namespace ApiServicoDePonto.Repositories.Repositorio
         }
         public List<Funcionario> ListarFuncionario(string? nome)
         {
-            string comandoSql = @"SELECT CpfCliente, Nome, Nascimento, Telefone FROM Cliente";
+            string comandoSql = @"SELECT CpfFuncionario, NomeFuncionario, NascimentoFuncionario, TelefoneFuncionario, EmailFuncionario, DataAdmissao, CargoId, LiderancaID, FuncionarioEquipeId FROM Cliente";
 
             if (!string.IsNullOrWhiteSpace(nome))
                 comandoSql += " WHERE nome LIKE @nome";
@@ -141,16 +131,16 @@ namespace ApiServicoDePonto.Repositories.Repositorio
                 }
             }
         }
-        public void Deletar(string cpfCliente)
+        public void Deletar(string cpfFuncionario)
         {
-            string comandoSql = @"DELETE FROM Cliente 
-                                WHERE CpfCliente = @CpfCliente;";
+            string comandoSql = @"DELETE FROM Funcionario 
+                                WHERE CpfFuncionario = @CpfFuncionario;";
 
             using (var cmd = new SqlCommand(comandoSql, _conn))
             {
-                cmd.Parameters.AddWithValue("@CpfCliente", cpfCliente);
+                cmd.Parameters.AddWithValue("@CpfFuncionario", cpfFuncionario);
                 if (cmd.ExecuteNonQuery() == 0)
-                    throw new InvalidOperationException($"Nenhum registro afetado para o cpf {cpfCliente}");
+                    throw new InvalidOperationException($"Nenhum registro afetado para o cpf {cpfFuncionario}");
             }
         }
     }

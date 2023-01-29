@@ -48,13 +48,13 @@ namespace ApiServicoDePonto.Repositories.Repositorio
             }
         }
 
-        public bool SeExiste(string funcionarioCpf)
+        public bool SeExiste(string pontoFuncionario)
         {
-            string comandoSql = @"SELECT COUNT(CpfFuncionario) as total FROM Ponto WHERE CpfFuncionario = @CpfFuncionario";
+            string comandoSql = @"SELECT COUNT(DataPonto) as total FROM Ponto WHERE DataPonto = @DataPonto";
 
             using (var cmd = new SqlCommand(comandoSql, _conn))
             {
-                cmd.Parameters.AddWithValue("@CpfFuncionario", funcionarioCpf);
+                cmd.Parameters.AddWithValue("@DataPonto", pontoFuncionario);
                 return Convert.ToBoolean(cmd.ExecuteScalar());
             }
         }
@@ -81,35 +81,7 @@ namespace ApiServicoDePonto.Repositories.Repositorio
             }
         }
 
-        public List<Ponto> ListarPonto(string cpf, DateTime ponto, string? justificativa)
-        {
-            string comandoSql = @"SELECT CpfFuncionario,DataPonto, JustificativaPonto WHERE CpfFuncionario = @CpfFuncionario";
-
-            if (!string.IsNullOrWhiteSpace(cpf))
-                comandoSql += " WHERE nome LIKE @nome";
-
-            using (var cmd = new SqlCommand(comandoSql, _conn))
-            {
-                if (!string.IsNullOrWhiteSpace(cpf))
-                    cmd.Parameters.AddWithValue("@nome", "%" + cpf + "%" + ponto + "%" + justificativa);
-
-                using (var rdr = cmd.ExecuteReader())
-                {
-                    var x = new List<Ponto>();
-                    while (rdr.Read())
-                    {
-                        var pontos = new Ponto();
-                        pontos.funcionario.CpfFuncionario = Convert.ToString(rdr["CpfFuncionario"]);
-                        pontos.DataPonto = Convert.ToDateTime(rdr["DataPonto"]);
-                        pontos.JustificativaPonto = Convert.ToString(rdr["JustificativaPonto"]);
-
-                    }
-                    return x;
-                }
-            }
-        }
-
-        public void DeletarPonto(Funcionario funcionario, string ponto)
+        public void DeletarPonto(Funcionario funcionario, DateTime ponto1)
         {
             if (funcionario.Cargo.ToString() == "Rh")
             {
@@ -117,9 +89,9 @@ namespace ApiServicoDePonto.Repositories.Repositorio
                 WHERE DataPonto = @DataPonto;";
                 using (var cmd = new SqlCommand(comandoSql, _conn))
                 {
-                    cmd.Parameters.AddWithValue("@DataPonto", ponto);
+                    cmd.Parameters.AddWithValue("@DataPonto", ponto1);
                     if (cmd.ExecuteNonQuery() == 0)
-                        throw new InvalidOperationException($"Nenhum registro afetado para a data {ponto}");
+                        throw new InvalidOperationException($"Nenhum registro afetado para a data {ponto1}");
                 }
             }
             else

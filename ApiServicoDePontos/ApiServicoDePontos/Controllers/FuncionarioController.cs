@@ -16,7 +16,14 @@ namespace ApiServicoDePontos.Controllers
         {
             _service = service;
         }
-        [HttpGet("funcionario")]
+
+        [HttpGet("Listar Funcionario Por CPF/{cpfFuncionario}")]
+        public IActionResult ObterPorCPF([FromRoute] string cpfFuncionario)
+        {
+            return StatusCode(200, _service.ObterPorCPF(cpfFuncionario));
+        }
+
+        [HttpGet("Listar Funcionarios")]
         public IActionResult Listar([FromQuery] string? nome)
         {
             var identity = HttpContext.User.Identity as ClaimsIdentity;
@@ -25,14 +32,8 @@ namespace ApiServicoDePontos.Controllers
             return StatusCode(200, _service.ListarFuncionario(nome));
         }
 
-        [HttpGet("funcionario/{cpfFuncionario}")]
-        public IActionResult Obter([FromRoute] string cpfFuncionario)
-        {
-            return StatusCode(200, _service.ObterPorCPF(cpfFuncionario));
-        }
-
         [Authorize(Roles = "1")]
-        [HttpPost("funcionario")]
+        [HttpPost("Inserir Funcionario")]
         public IActionResult Inserir([FromBody] Funcionario model)
         {
             try
@@ -47,16 +48,9 @@ namespace ApiServicoDePontos.Controllers
             }
         }
 
-        [Authorize(Roles = "1")]
-        [HttpDelete("funcionario/{cpfFuncionario}")]
-        public IActionResult Deletar([FromRoute] string cpfFuncionario)
-        {
-            _service.Deletar(cpfFuncionario);
-            return StatusCode(200);
-        }
 
         [Authorize(Roles = "1")]
-        [HttpPut("funcionario")]
+        [HttpPut("Atualizar Funcionario")]
         public IActionResult Atualizar([FromBody] Funcionario model)
         {
             try
@@ -68,6 +62,14 @@ namespace ApiServicoDePontos.Controllers
             {
                 return StatusCode(500, ex.ToString());
             }
+        }
+
+        [Authorize(Roles = "1")]
+        [HttpDelete("Deleatar Funcionario/{cpfFuncionario}")]
+        public IActionResult Deletar([FromRoute] string cpfFuncionario)
+        {
+            _service.Deletar(cpfFuncionario);
+            return StatusCode(200);
         }
     }
 }

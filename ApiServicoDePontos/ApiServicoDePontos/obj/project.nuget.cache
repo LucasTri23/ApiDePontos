@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WQ0WeYZIz/v1+1lAoOXaw1XR8Sr+O0hHWfKeHS0CRY0A5zmz1Z3JS0zjvF/x8ZVd1YVeZZb1ueO1omDrmXxdxg==",
+  "dgSpecHash": "xgen5LgQ2zfAGPO2by8nzCVf0lbMYifd6HI16+I/Jd75OBz3yTf7sBW4xOop4Z2PCniO+whSxcHUEb4MBJM9Wg==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\ApiServicoDePontos\\ApiServicoDePontos\\ApiServicoDePontos.csproj",
+  "projectFilePath": "C:\\APIs\\ApiServicoDePontos\\ApiServicoDePontos\\ApiServicoDePontos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.1\\microsoft.aspnetcore.openapi.7.0.1.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

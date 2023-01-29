@@ -10,3 +10,15 @@ C:\Projetos\ApiServicoDePontos\ApiServicoDePontos.Domain\obj\Debug\net6.0\ApiSer
 C:\Projetos\ApiServicoDePontos\ApiServicoDePontos.Domain\obj\Debug\net6.0\refint\ApiServicoDePontos.Domain.dll
 C:\Projetos\ApiServicoDePontos\ApiServicoDePontos.Domain\obj\Debug\net6.0\ApiServicoDePontos.Domain.pdb
 C:\Projetos\ApiServicoDePontos\ApiServicoDePontos.Domain\obj\Debug\net6.0\ref\ApiServicoDePontos.Domain.dll
+C:\APIs\ApiServicoDePontos\ApiServicoDePontos.Domain\bin\Debug\net6.0\ApiServicoDePontos.Domain.deps.json
+C:\APIs\ApiServicoDePontos\ApiServicoDePontos.Domain\bin\Debug\net6.0\ApiServicoDePontos.Domain.dll
+C:\APIs\ApiServicoDePontos\ApiServicoDePontos.Domain\bin\Debug\net6.0\ApiServicoDePontos.Domain.pdb
+C:\APIs\ApiServicoDePontos\ApiServicoDePontos.Domain\obj\Debug\net6.0\ApiServicoDePontos.Domain.csproj.AssemblyReference.cache
+C:\APIs\ApiServicoDePontos\ApiServicoDePontos.Domain\obj\Debug\net6.0\ApiServicoDePontos.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\APIs\ApiServicoDePontos\ApiServicoDePontos.Domain\obj\Debug\net6.0\ApiServicoDePontos.Domain.AssemblyInfoInputs.cache
+C:\APIs\ApiServicoDePontos\ApiServicoDePontos.Domain\obj\Debug\net6.0\ApiServicoDePontos.Domain.AssemblyInfo.cs
+C:\APIs\ApiServicoDePontos\ApiServicoDePontos.Domain\obj\Debug\net6.0\ApiServicoDePontos.Domain.csproj.CoreCompileInputs.cache
+C:\APIs\ApiServicoDePontos\ApiServicoDePontos.Domain\obj\Debug\net6.0\ApiServicoDePontos.Domain.dll
+C:\APIs\ApiServicoDePontos\ApiServicoDePontos.Domain\obj\Debug\net6.0\refint\ApiServicoDePontos.Domain.dll
+C:\APIs\ApiServicoDePontos\ApiServicoDePontos.Domain\obj\Debug\net6.0\ApiServicoDePontos.Domain.pdb
+C:\APIs\ApiServicoDePontos\ApiServicoDePontos.Domain\obj\Debug\net6.0\ref\ApiServicoDePontos.Domain.dll
